@@ -15,7 +15,10 @@ public partial class vista2 : ContentPage
 
     private void btnCalcular_Clicked(object sender, EventArgs e)
     {
-        
+        double monto = double.Parse(txtMonto.Text);
+        double saldoInicial = (100 * monto)/15;
+        double cuota = (saldoInicial/3)+(saldoInicial*0.05);
+        lblCuota.Text = cuota.ToString("0.00");
     }
 
     private void Button_Clicked_1(object sender, EventArgs e)

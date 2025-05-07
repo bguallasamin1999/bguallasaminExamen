@@ -20,7 +20,8 @@ public partial class vista3 : ContentPage
 		lblCiudad.Text = ciudad;
 		lblMontoInicial.Text = monto_inicial;
 		lblCuotaMensual.Text = cuota_mensual;
-
+		double pagoTotal = double.Parse(cuota_mensual) * 3;
+		lblPagoTotal.Text = pagoTotal.ToString("0.00");
 
     }
 

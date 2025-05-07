@@ -30,7 +30,8 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Label Text="Nombre" 
-                   FontSize="18" 
+                   FontSize="18"
+                   Style="{StaticResource labelStyle}"
                    HorizontalTextAlignment="Center" 
                    Grid.Row="0" 
                    Grid.Column="0"/>
@@ -39,7 +40,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="0" 
                    Grid.Column="1"/>
-            <Label Text="Apellido" 
+            <Label Text="Apellido"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="1" 
@@ -49,7 +51,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="1" 
                    Grid.Column="1"/>
-            <Label Text="VA" 
+            <Label Text="VA"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="2" 
@@ -59,7 +62,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="2" 
                    Grid.Column="1"/>
-            <Label Text="Fecha" 
+            <Label Text="Fecha"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="3" 
@@ -69,7 +73,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="3" 
                    Grid.Column="1"/>
-            <Label Text="Ciudad" 
+            <Label Text="Ciudad"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="4" 
@@ -79,7 +84,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="4" 
                    Grid.Column="1"/>
-            <Label Text="Monto Inicial" 
+            <Label Text="Monto Inicial"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="5" 
@@ -89,7 +95,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="5" 
                    Grid.Column="1"/>
-            <Label Text="Cuota mensual" 
+            <Label Text="Cuota mensual"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="6" 
@@ -99,7 +106,8 @@
                    HorizontalTextAlignment="Center" 
                    Grid.Row="6" 
                    Grid.Column="1"/>
-            <Label Text="Pago total" 
+            <Label Text="Pago total"
+                   Style="{StaticResource labelStyle}"
                    FontSize="18" 
                    HorizontalTextAlignment="Center" 
                    Grid.Row="7" 
