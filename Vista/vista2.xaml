@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bguallasaminExamen.Vista.vista2"
+             Title="vista2">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label
+            x:Name="lblUsuario"
+            FontSize="32"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" />
+        <Label 
+            Text="REGISTRO"
+            TextColor="Blue"
+            FontSize="22"
+            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Nombre" 
+                   FontSize="18" 
+                   HorizontalTextAlignment="Center" 
+                   Grid.Row="0" 
+                   Grid.Column="0"/>
+            <Entry x:Name="txtNombre"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Label Text="Apellido" 
+                   FontSize="18" 
+                   HorizontalTextAlignment="Center" 
+                   Grid.Row="0" 
+                   Grid.Column="1"/>
+            <Entry x:Name="txtApellido"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+            <Label Text="Voltiamperio VA"
+                   FontSize="18" 
+                   HorizontalTextAlignment="Center" 
+                   Grid.Row="0" 
+                   Grid.Column="2"/>
+            <Picker x:Name="pickVoltaje"
+                    Grid.Row="1"
+                    Grid.Column="2">
+                <Picker.Items>
+                    <x:String>Seleccione..</x:String>
+                    <x:String>500 VA</x:String>
+                    <x:String>750 VA</x:String>
+                    <x:String>1000 Va</x:String>
+                </Picker.Items>
+            </Picker>
+
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Fecha:"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <DatePicker x:Name="pickFecha"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+            <Label Text="Ciudad:"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Picker x:Name="pickCiudad"
+                    Grid.Row="1"
+                    Grid.Column="1">
+                <Picker.Items>
+                    <x:String>Seleccione..</x:String>
+                    <x:String>Quito</x:String>
+                    <x:String>Guayaquil</x:String>
+                    <x:String>Cuenca</x:String>
+                    <x:String>Manta</x:String>
+                    <x:String>Machala</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label Text="Monto inicial:"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtMonto"
+                   Grid.Row="2"
+                   Grid.Column="1"></Entry>
+            <Button x:Name="btnCalcular"
+                    Text="Calcular pago mensual"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Clicked="btnCalcular_Clicked"/>
+            <Label x:Name="lblCuota"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+        </Grid>
+        <Button Text="Ver Resumen"
+                Clicked="Button_Clicked_1"></Button>
+        <Button Text="Salir" 
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Clicked="Button_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

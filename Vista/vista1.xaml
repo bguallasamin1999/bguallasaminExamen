@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bguallasaminExamen.Vista.vista1"
+             Title="vista1">
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            TextColor="Red"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image
+            Source="logo.png"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+            WidthRequest="100"/>
+        <Grid>
+            <!--Filas-->
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--Columnas-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO"
+           FontSize="18"
+           HorizontalTextAlignment="Center"
+           Grid.Row="0"
+           Grid.Column="0"/>
+            <Entry x:Name="txtUsuario"
+           Placeholder="Ingrese el usuario"
+           HorizontalTextAlignment="Center"
+           Grid.Row="0"
+           Grid.Column="1"/>
+            <Label Text="CONTRASEÑA"
+           FontSize="18"
+           HorizontalTextAlignment="Center"
+           Grid.Row="1"
+           Grid.Column="0"/>
+            <Entry x:Name="txtContrasena"
+           Placeholder="Ingrese la contraseña"
+           HorizontalTextAlignment="Center"
+           Grid.Row="1"
+           Grid.Column="1"/>
+            <Button Text="Ingresar"
+                    TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    BorderColor="Black"
+                    Background="White"
+                    BorderWidth="1"></Button>
+            <Button Text="Acerca de"
+                    TextColor="Black"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked_1"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    BorderColor="Black"
+                    Background="White"
+                    BorderWidth="1"></Button>
+        </Grid>
+        
+
+    </VerticalStackLayout>
+</ContentPage>
